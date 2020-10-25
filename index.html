@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='style.css') }}">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>{{title}}</title>
+</head>
+<body class=body>
+<div class="input">
+    <div class="shadowbox">
+        <form method="post">
+            <h3>обрати часовий ряд:
+                <select name="time_row" id="time_row">
+                    <option value=VHI>VHI</option>
+                    <option value=TCI>TCI</option>
+                    <option value=VCI>VCI</option>
+                    <option value=SMT>SMT</option>
+                    <option value=SMN>SMN</option>
+                </select>
+            </h3>
+            <h3>обрати місто:
+                <select name="province" id="province">
+                    <option value=1>Cherkasy</option>
+                    <option value=2>Chernihiv</option>
+                    <option value=3>Chernivtsi</option>
+                    <option value=4>Crimea</option>
+                    <option value=5>Dnipropetrovs'k</option>
+                    <option value=6>Donets'k</option>
+                    <option value=7>Ivano-Frankivs'k</option>
+                    <option value=8>Kharkiv</option>
+                    <option value=9>Kherson</option>
+                    <option value=10>Khmel'nyts'kyy</option>
+                    <option value=11>Kiev</option>
+                    <option value=12>City</option>
+                    <option value=13>Kirovohrad</option>
+                    <option value=14>Luhans'k</option>
+                    <option value=15>L'viv</option>
+                    <option value=16>Mykolayiv</option>
+                    <option value=17>Odessa</option>
+                    <option value=18>Poltava</option>
+                    <option value=19>Rivne</option>
+                    <option value=20>Sevastopol'</option>
+                    <option value=21>Sumy</option>
+                    <option value=22>Ternopil'</option>
+                    <option value=23>Transcarpathia</option>
+                    <option value=24>Vinnytsya</option>
+                    <option value=25>Volyn</option>
+                    <option value=26>Zaporizhzhya</option>
+                    <option value=27>Zhytomyr</option>
+                </select>
+            </h3>
+            <h3>інтервал тижнів (тиждень1-тиждень2):
+                <input type="text" name="week_interval">
+            </h3>
+
+            <input type="submit" value="Завантажити" class="button">
+        </form>
+    </div>
+
+</div>
+
+
+</body>
+</html>
